@@ -3,6 +3,17 @@ Expanded todomvc with login, signup and drag and drop
 
 Simple todoMVC app build with Vue.js, originally forked from [testing-workshop-cypress](https://github.com/cypress-io/testing-workshop-cypress). I expanded the appliaction and added a couple of features.
 
+## Start up instructions
+
+1. Clone the repo
+2. cd into testing-lists
+3. run `npm i`
+4. run `npm start`
+5. Go to localhost:3000 to ensure application is running
+6. open a new terminal 
+7. cd into testing-lists folder
+8. run `npx cypress open`
+
 ## Features
 ### drag & drop
 Reorder todos in list.
