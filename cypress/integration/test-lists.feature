@@ -13,6 +13,11 @@ Feature: Test list interactions
     Scenario: Remove item from list
     Given I click the red x on a todo item
     Then The item I removed should no longer be in the list
+    @focus 
+    Scenario: List state stays same after page refresh
+    Given I add items to the list
+    And I refresh the page
+    Then The list stays in the same state and same order
     #Extra credit***
     @focus 
     Scenario: Reorder the list
