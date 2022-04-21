@@ -4,5 +4,5 @@ Given('I visit the site localhost', () => {
 });
 
 When('I add an item to the todo list', () => {
-    // code your next step here
+    cy.get('#add-todo').type('walk dog{enter}')
 });
