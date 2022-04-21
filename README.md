@@ -13,6 +13,8 @@ Simple todoMVC app build with Vue.js, originally forked from [testing-workshop-c
 6. open a new terminal 
 7. cd into testing-lists folder
 8. run `npx cypress open`
+9. Look at the BDD scenarios in the .feature files within the cypress folder
+10. Go to the corresponding spec.js file and write the test definitions for the scenarios
 
 ## Features
 ### drag & drop

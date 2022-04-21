@@ -13,6 +13,7 @@ Feature: Test list interactions
     Scenario: Remove item from list
     Given I click the red x on a todo item
     Then The item I removed should no longer be in the list
+    #Extra credit***
     @focus 
     Scenario: Reorder the list
     Given I click and drag the bottom list item to the top
