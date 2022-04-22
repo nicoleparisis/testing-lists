@@ -20,7 +20,6 @@ Then('The item should have the class completed', () => {
 });
 
 Given('I click the red x on a todo item', () => {
-    cy.get('#todo-list').get('li').eq(1).trigger('mouseover')
     cy.get('#add-todo').get(':nth-child(1) > .view >  .destroy').invoke('show').click()
 });
 
