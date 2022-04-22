@@ -1,7 +1,6 @@
 Given('I visit the site localhost', () => {
     cy.visit('http://localhost:3000');
     cy.wait(1000) // wait for page to load
-    cy.visit('http://localhost:3000/login');
 });
 When('I add an item to the todo list', () => {
   cy.get('#add-todo').click().type('walk dog{enter}');
@@ -27,6 +26,7 @@ Given('I click the red x on a todo item', () => {
 
 Then('The item I removed should no longer be in the list', () => {
     cy.get('.todo').should('have.length', 1)
+    
 });
 
 Given('I add items to the list', () => {
@@ -40,6 +40,11 @@ And('I refresh the page', () => {
 
 And('The list stays in the same state and same order', () => {
     cy.get('.todo').should('have.length', 4)
+    cy.get('.todo').eq(0).get('label').contains('buy milk')
+    cy.get('.todo').eq(1).get('label').contains('wash dishes')
+    cy.get('.todo').eq(2).get('label').contains('shoe shopping')
+    cy.get('.todo').eq(3).get('label').contains('gardening')
+
 });
 
 And('I click and drag the bottom list item to the top', () => {
