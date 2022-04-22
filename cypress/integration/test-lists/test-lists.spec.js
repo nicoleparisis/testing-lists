@@ -40,10 +40,10 @@ And('I refresh the page', () => {
 
 And('The list stays in the same state and same order', () => {
     cy.get('.todo').should('have.length', 4)
-    cy.get('.todo').eq(0).get('label').contains('buy milk')
-    cy.get('.todo').eq(1).get('label').contains('wash dishes')
-    cy.get('.todo').eq(2).get('label').contains('shoe shopping')
-    cy.get('.todo').eq(3).get('label').contains('gardening')
+    cy.get('.todo').eq(0).get('label').contains('buy milk').should('be.visible');
+    cy.get('.todo').eq(1).get('label').contains('wash dishes').should('be.visible');
+    cy.get('.todo').eq(2).get('label').contains('shoe shopping').should('be.visible');
+    cy.get('.todo').eq(3).get('label').contains('gardening').should('be.visible');
 
 });
 
