@@ -15,6 +15,7 @@ Simple todoMVC app build with Vue.js, originally forked from [testing-workshop-c
 8. run `npx cypress open`
 9. Look at the BDD scenarios in the .feature files within the cypress folder
 10. Go to the corresponding spec.js file and write the test definitions for the scenarios
+11. (Optional) install the vscode plugin for cucumber (Given when... scenarios) https://marketplace.visualstudio.com/items?itemName=alexkrechik.cucumberautocomplete
 
 ## Features
 ### drag & drop
