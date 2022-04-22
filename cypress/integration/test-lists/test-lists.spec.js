@@ -25,6 +25,7 @@ Given('I click the red x on a todo item', () => {
 
 Then('The item I removed should no longer be in the list', () => {
     cy.get('.todo').should('have.length', 1)
+    cy.get('section').get('ul').get('#todo-list').get('label').contains('buy milk').should('not.exist');
     
 });
 
