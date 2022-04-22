@@ -1,6 +1,7 @@
 Given('I visit the site localhost', () => {
-    cy.visit('http://localhost:3000/');
+    cy.visit('http://localhost:3000');
     cy.wait(1000) // wait for page to load
+    cy.visit('http://localhost:3000/login');
 });
 When('I add an item to the todo list', () => {
   cy.get('#add-todo').click().type('walk dog{enter}');
