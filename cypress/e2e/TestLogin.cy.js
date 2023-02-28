@@ -1,6 +1,6 @@
 describe('I visit the login page', () => {
       it('passes', () => {
-      cy.visit('https://example.cypress.io')
+      cy.visit('http://localhost:3000/login')
       cy.wait(1000) // wait for page to load
       cy.get('h1').contains('login');
       
