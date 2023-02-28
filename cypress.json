@@ -1,8 +1,0 @@
-{
-  "testFiles": "**/*.feature",
-  "viewportWidth": 600,
-  "viewportHeight": 800,
-  "baseUrl": "http://localhost:3000",
-  "defaultCommandTimeout": 4000,
-  "$schema": "https://on.cypress.io/cypress.schema.json"
-}

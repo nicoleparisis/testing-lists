@@ -6,13 +6,12 @@
     "start": "./node_modules/.bin/json-server --static . data.json -m middleware.js --config json-server.json"
   },
   "devDependencies": {
+    "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "@playwright/test": "^1.31.0",
-    "cypress": "^9.5.4",
-    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress": "^12.7.0",
     "json-server": "0.15.1",
     "sendmail": "^1.6.1"
   },
-  "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
-  }
+
+  "dependencies": {}
 }
